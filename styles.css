@@ -260,6 +260,11 @@ main {
 .card h3 a:hover {
   color: var(--accent);
 }
+.card-domain {
+  font-size: 0.8rem !important;
+  color: var(--muted) !important;
+  margin: -4px 0 12px !important;
+}
 .card p {
   margin: 0 0 14px;
   font-size: 0.94rem;

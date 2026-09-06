@@ -6,7 +6,7 @@
     <title>Muhammad Adeel — Software Engineer</title>
     <meta
       name="description"
-      content="Muhammad Adeel — full-stack software engineer. React/Next.js, Node/NestJS, AWS. Spec-driven, test-first, AI-assisted delivery."
+      content="Muhammad Adeel — software engineer building production software across the stack: web platforms, backend services, payments, and cloud. Spec-driven, test-first."
     />
     <meta name="color-scheme" content="dark light" />
     <link rel="icon" href="assets/imgs/pp.jpg" />
@@ -29,13 +29,13 @@
     </script>
   </head>
   <body>
-    <a class="skip-link" href="#work">Skip to work</a>
+    <a class="skip-link" href="#projects">Skip to work</a>
 
     <header class="site-header">
       <a class="brand" href="#top">MA</a>
       <nav class="nav" aria-label="Primary">
-        <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
+        <a href="#projects">Projects</a>
+        <a href="#open-source">Open source</a>
         <a href="#stack">Stack</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -50,16 +50,16 @@
         <p class="eyebrow">Software Engineer · Islamabad, Pakistan</p>
         <h1>Muhammad Adeel</h1>
         <p class="lead">
-          I build admin consoles, backend APIs, and payment flows for the web —
-          full-stack across React/Next.js and Node/NestJS on AWS.
+          I design and build production software across the stack — web platforms, backend
+          services, payments, auth, and cloud.
         </p>
         <p class="sub">
-          Currently at VentureDive. I work spec-first and test-first: requirements become
-          written specs, plans are reviewed before code, and tests are written to acceptance
-          criteria.
+          Full-stack engineer with 4+ years shipping products in fintech, mobility, travel, and
+          compliance for teams in the UAE, KSA, and US. Currently at VentureDive. I work spec-first
+          and test-first — versioned specs become reviewed plans and tested code.
         </p>
         <div class="cta">
-          <a class="btn btn-primary" href="#work">Selected work</a>
+          <a class="btn btn-primary" href="#projects">Selected work</a>
           <a class="btn" href="https://github.com/adeelism" target="_blank" rel="noopener">GitHub</a>
           <a class="btn" href="https://www.linkedin.com/in/muhammad-adeel-051034212/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn" href="mailto:adeelism12@gmail.com">Email</a>
@@ -67,66 +67,135 @@
         <p class="availability"><span class="dot"></span> Open to software / senior software engineer roles</p>
       </section>
 
-      <!-- Work -->
-      <section id="work" class="section">
-        <h2 class="section-title"><span class="section-index">01</span> Selected work</h2>
+      <!-- Professional projects -->
+      <section id="projects" class="section">
+        <h2 class="section-title"><span class="section-index">01</span> Selected projects</h2>
         <p class="section-note">
-          Open-source reference implementations of patterns I ship in production. Each is
-          typed, tested, and CI-gated. (Client work is private; these are clean-room builds.)
+          Production platforms I've built and shipped for clients across fintech, mobility, travel,
+          and compliance.
+        </p>
+
+        <div class="projects">
+          <article class="card">
+            <h3>Roam</h3>
+            <p class="card-domain">US ride-hailing · operations console</p>
+            <p>
+              A 20-module back-office over six Spring Boot microservices behind AWS API Gateway. I
+              build frontend modules end to end — typed services, React Query hooks, business rules,
+              permission-gated UI — sustaining ≥90% test coverage against an enforced CI gate.
+            </p>
+            <ul class="tags">
+              <li>React 19</li><li>TypeScript</li><li>Vite</li><li>TanStack Query</li><li>Ant Design</li><li>Cognito</li>
+            </ul>
+            <p class="card-meta">VentureDive · frontend</p>
+          </article>
+
+          <article class="card">
+            <h3>MinglEat</h3>
+            <p class="card-domain">UAE social-dining marketplace</p>
+            <p>
+              Designed and shipped the marketplace backend as eight domain modules — restaurants,
+              bookings, a loyalty ledger, reviews, RBAC — plus per-seat payments and automated
+              payouts via Stripe Connect, and the operations admin console.
+            </p>
+            <ul class="tags">
+              <li>NestJS</li><li>PostgreSQL/PostGIS</li><li>TypeORM</li><li>Redis/BullMQ</li><li>Stripe Connect</li><li>Cognito</li>
+            </ul>
+            <p class="card-meta">VentureDive · full-stack</p>
+          </article>
+
+          <article class="card">
+            <h3>Urban Air Mobility</h3>
+            <p class="card-domain">KSA on-demand helicopter booking</p>
+            <p>
+              A seven-step booking engine on Next.js Server Components with an idempotent BFF that
+              eliminates duplicate charges. Bilingual EN/AR (RTL), multi-tenant Firebase auth with
+              OTP 2FA, and Moyasar + Apple Pay.
+            </p>
+            <ul class="tags">
+              <li>Next.js (RSC)</li><li>TypeScript</li><li>Zustand</li><li>Moyasar</li><li>Apple Pay</li><li>Firebase</li>
+            </ul>
+            <p class="card-meta">VentureDive · frontend + BFF</p>
+          </article>
+
+          <article class="card">
+            <h3>Internal Audit Web Portal</h3>
+            <p class="card-domain">Aviation compliance &amp; audit lifecycle</p>
+            <p>
+              Reports and findings flows, document uploads, and threaded comments on audit actions,
+              behind CASL permission-gated UI. Shipped one reusable data table — filtering, sorting,
+              URL-synced pagination — adopted by every listing module.
+            </p>
+            <ul class="tags">
+              <li>React</li><li>TypeScript</li><li>TanStack Query</li><li>React Hook Form</li><li>Zod</li><li>CASL</li>
+            </ul>
+            <p class="card-meta">VentureDive · frontend</p>
+          </article>
+
+          <article class="card">
+            <h3>Dawlati</h3>
+            <p class="card-domain">UAE professional-networking platform</p>
+            <p>
+              Super Admin and Partner dashboards supporting 50+ onboarded companies, with
+              platform-wide Stripe payments and a chat UI built from scratch on the Sendbird SDK,
+              including multimedia sharing.
+            </p>
+            <ul class="tags">
+              <li>React</li><li>Ant Design</li><li>Tailwind</li><li>Node.js</li><li>Stripe</li><li>Sendbird</li>
+            </ul>
+            <p class="card-meta">VentureDive · full-stack</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Open source -->
+      <section id="open-source" class="section">
+        <h2 class="section-title"><span class="section-index">02</span> Open source</h2>
+        <p class="section-note">
+          Public, MIT-licensed reference implementations of patterns I use in production — each
+          typed, tested, and CI-gated.
         </p>
 
         <div class="projects">
           <article class="card">
             <h3><a href="https://github.com/adeelism/nestjs-cognito-auth-starter" target="_blank" rel="noopener">nestjs-cognito-auth-starter</a></h3>
             <p>Authentication behind a swappable identity provider — real AWS Cognito or an in-memory mock — with JWT, refresh, and RBAC guards. Runs with no AWS account.</p>
-            <ul class="tags">
-              <li>NestJS</li><li>TypeORM</li><li>PostgreSQL</li><li>JWT</li><li>Docker</li><li>Jest</li>
-            </ul>
+            <ul class="tags"><li>NestJS</li><li>TypeORM</li><li>PostgreSQL</li><li>JWT</li><li>Docker</li></ul>
             <p class="card-meta">100% statement coverage · CI green</p>
           </article>
 
           <article class="card">
             <h3><a href="https://github.com/adeelism/react-admin-console-starter" target="_blank" rel="noopener">react-admin-console-starter</a></h3>
-            <p>A module-first React 19 admin console: permission-gated lazy routes, TanStack Query over one HTTP client, per-module MSW mocking, i18n, and CSS-variable theming.</p>
-            <ul class="tags">
-              <li>React 19</li><li>TypeScript</li><li>Vite</li><li>TanStack Query</li><li>MSW</li><li>Vitest</li>
-            </ul>
+            <p>A module-first React 19 admin console: permission-gated lazy routes, TanStack Query over one HTTP client, per-module MSW mocking, i18n, and theming.</p>
+            <ul class="tags"><li>React 19</li><li>TypeScript</li><li>Vite</li><li>TanStack Query</li><li>MSW</li></ul>
             <p class="card-meta">~99% coverage · CI green</p>
           </article>
 
           <article class="card">
             <h3><a href="https://github.com/adeelism/nextjs-bff-payments-example" target="_blank" rel="noopener">nextjs-bff-payments-example</a></h3>
-            <p>A Next.js BFF that creates orders idempotently: idempotency keys, duplicate-charge protection under concurrency, and server-side repricing. Stripe or a mock provider.</p>
-            <ul class="tags">
-              <li>Next.js</li><li>App Router</li><li>Zod</li><li>Stripe</li><li>Playwright</li>
-            </ul>
+            <p>A Next.js BFF that creates orders idempotently: idempotency keys, duplicate-charge protection under concurrency, and server-side repricing. Stripe or a mock.</p>
+            <ul class="tags"><li>Next.js</li><li>Zod</li><li>Stripe</li><li>Playwright</li></ul>
             <p class="card-meta">Unit + e2e · CI green</p>
           </article>
 
           <article class="card">
             <h3><a href="https://github.com/adeelism/spec-driven-dev-template" target="_blank" rel="noopener">spec-driven-dev-template</a></h3>
-            <p>A reusable template for spec-driven, AI-assisted development: engineering standards, spec and plan templates, and a fully worked example of the spec → plan → implement flow.</p>
-            <ul class="tags">
-              <li>Process</li><li>Standards</li><li>Claude Code</li><li>Documentation</li>
-            </ul>
+            <p>A reusable template for spec-driven, AI-assisted development: engineering standards, spec and plan templates, and a fully worked example of the flow.</p>
+            <ul class="tags"><li>Process</li><li>Standards</li><li>Claude Code</li></ul>
             <p class="card-meta">How I work, made concrete</p>
           </article>
 
           <article class="card">
             <h3><a href="https://github.com/adeelism/leetcode-python" target="_blank" rel="noopener">leetcode-python</a></h3>
             <p>71 accepted LeetCode solutions organized by pattern, each with the approach and time/space complexity, plus a pytest suite that runs the examples.</p>
-            <ul class="tags">
-              <li>Python</li><li>Algorithms</li><li>pytest</li><li>ruff</li>
-            </ul>
+            <ul class="tags"><li>Python</li><li>Algorithms</li><li>pytest</li><li>ruff</li></ul>
             <p class="card-meta">164 tests · CI green</p>
           </article>
 
           <article class="card">
             <h3><a href="https://github.com/adeelism/Taskforge-backend" target="_blank" rel="noopener">Taskforge-backend</a></h3>
-            <p>A small task-management API in FastAPI + SQLAlchemy 2.0 — environment-based config, bcrypt password hashing, and a users/tasks REST API with proper error handling.</p>
-            <ul class="tags">
-              <li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>Pydantic</li>
-            </ul>
+            <p>A task-management API in FastAPI + SQLAlchemy 2.0 — environment-based config, bcrypt password hashing, and a users/tasks REST API with proper error handling.</p>
+            <ul class="tags"><li>Python</li><li>FastAPI</li><li>SQLAlchemy</li><li>Pydantic</li></ul>
             <p class="card-meta">~99% coverage · CI green</p>
           </article>
         </div>
@@ -134,11 +203,11 @@
 
       <!-- Approach -->
       <section id="approach" class="section">
-        <h2 class="section-title"><span class="section-index">02</span> How I work</h2>
+        <h2 class="section-title"><span class="section-index">03</span> How I work</h2>
         <div class="approach">
           <div class="approach-item">
             <h3>Spec-driven</h3>
-            <p>Requirements become written specs — user stories, acceptance criteria, business rules, an error catalogue, and an API contract — before any code.</p>
+            <p>Requirements become versioned specs — user stories, acceptance criteria, business rules, an error catalogue, and an API contract — before any code.</p>
           </div>
           <div class="approach-item">
             <h3>Test-first</h3>
@@ -153,20 +222,24 @@
 
       <!-- Stack -->
       <section id="stack" class="section">
-        <h2 class="section-title"><span class="section-index">03</span> Stack</h2>
+        <h2 class="section-title"><span class="section-index">04</span> Stack</h2>
         <div class="stack">
+          <div class="stack-group">
+            <h3>Languages</h3>
+            <ul class="tags"><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>Ruby</li><li>SQL</li></ul>
+          </div>
           <div class="stack-group">
             <h3>Frontend</h3>
             <ul class="tags">
-              <li>React 19</li><li>Next.js (RSC/BFF)</li><li>TypeScript</li><li>TanStack Query</li>
-              <li>Redux Toolkit</li><li>Zustand</li><li>Ant Design</li><li>Tailwind</li>
+              <li>React 19</li><li>Next.js (RSC/BFF)</li><li>TanStack Query</li><li>Redux Toolkit</li>
+              <li>Zustand</li><li>Ant Design</li><li>Tailwind</li><li>Vite</li>
             </ul>
           </div>
           <div class="stack-group">
             <h3>Backend</h3>
             <ul class="tags">
-              <li>Node.js</li><li>NestJS</li><li>Express</li><li>Python</li><li>FastAPI</li>
-              <li>PostgreSQL / PostGIS</li><li>TypeORM</li><li>Redis / BullMQ</li>
+              <li>Node.js</li><li>NestJS</li><li>Express</li><li>FastAPI</li><li>Ruby on Rails</li>
+              <li>PostgreSQL / PostGIS</li><li>TypeORM</li><li>Redis / BullMQ</li><li>MongoDB</li>
             </ul>
           </div>
           <div class="stack-group">
@@ -180,7 +253,14 @@
             <h3>Testing</h3>
             <ul class="tags">
               <li>Vitest</li><li>Jest</li><li>React Testing Library</li><li>MSW</li>
-              <li>Playwright</li><li>Supertest</li><li>pytest</li>
+              <li>Playwright</li><li>RSpec</li><li>pytest</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>Integrations &amp; AI</h3>
+            <ul class="tags">
+              <li>Stripe / Stripe Connect</li><li>Moyasar</li><li>Apple Pay</li><li>Sendbird</li>
+              <li>Twilio</li><li>Claude Code</li><li>MCP</li><li>RAG</li>
             </ul>
           </div>
         </div>
@@ -188,28 +268,28 @@
 
       <!-- Experience -->
       <section id="experience" class="section">
-        <h2 class="section-title"><span class="section-index">04</span> Experience</h2>
+        <h2 class="section-title"><span class="section-index">05</span> Experience</h2>
         <ol class="timeline">
           <li>
             <div class="timeline-head">
               <h3>Software Engineer · VentureDive</h3>
               <span class="when">Jun 2024 — Present</span>
             </div>
-            <p>Full-stack delivery on web platforms — admin consoles over microservices, backend APIs, and payment/booking flows — with a spec-first, test-first workflow.</p>
+            <p>Full-stack delivery on production platforms — the projects above across ride-hailing, social dining, air mobility, aviation compliance, and professional networking — with a spec-first, test-first workflow.</p>
           </li>
           <li>
             <div class="timeline-head">
               <h3>Full-Stack Software Engineer · Devsinc</h3>
               <span class="when">Feb 2022 — May 2024</span>
             </div>
-            <p>Built and shipped web applications across the stack, from React frontends to Node and Python services and relational data models.</p>
+            <p>Shipped web apps across the stack: an employee-review platform (RAPP), a social video platform with live streaming (InCast), and a goal-tracking social app (4wrdTogether). React, Node, Python, Ruby on Rails.</p>
           </li>
           <li>
             <div class="timeline-head">
-              <h3>Freelance Engineer · Upwork</h3>
-              <span class="when">Earlier</span>
+              <h3>Freelance Full-Stack Developer · Upwork</h3>
+              <span class="when">Jan 2024 — Aug 2024</span>
             </div>
-            <p>Delivered web features and integrations for clients independently.</p>
+            <p>Delivered products end to end for clients: a drag-and-drop dynamic form builder (Convify) and a real-time clinic appointment-booking site (Synergy Primary Clinic).</p>
           </li>
           <li>
             <div class="timeline-head">
@@ -223,7 +303,7 @@
 
       <!-- Contact -->
       <section id="contact" class="section contact">
-        <h2 class="section-title"><span class="section-index">05</span> Contact</h2>
+        <h2 class="section-title"><span class="section-index">06</span> Contact</h2>
         <p class="section-note">Open to software / senior software engineer roles. The fastest way to reach me:</p>
         <ul class="contact-list">
           <li><span class="contact-label">Email</span><a href="mailto:adeelism12@gmail.com">adeelism12@gmail.com</a></li>
